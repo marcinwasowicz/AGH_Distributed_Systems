@@ -1,0 +1,7 @@
+Office.Endpoints= tcp -h 127.0.0.2 -p 10000 -t 5000
+Office.ThreadPool.Size= 20
+
+Workforce.ThreadPool.Size= 50
+Ice.ACM.Close=4
+Ice.ACM.Heartbeat=0
+Ice.ACM.Timeout=30

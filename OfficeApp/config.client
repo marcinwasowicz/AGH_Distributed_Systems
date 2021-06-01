@@ -1,0 +1,6 @@
+ReceptionProxy= Reception : tcp -h 127.0.0.2 -p 10000 -t 5000
+ServiceProxy= Service : tcp -h 127.0.0.2 -p 10000 -t 5000
+Ice.Warn.Connections=1
+Ice.ACM.Close=0
+Ice.ACM.Heartbeat=3
+Ice.ACM.Timeout=30
