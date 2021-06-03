@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package = "randomStreaming";
+option java_multiple_files = true;
+option java_outer_classname = "RandomStreamingProto";
+
+package randomStreaming;
+
+message RandomStreamRequest {
+    int32 bound = 1;
+    int32 count = 2;
+    int32 time_interval = 3;
+}
+
+message NextRandom {
+    int32 next = 1;
+}
+
+service RandomStreamer {
+    rpc getRandomStream(stream RandomStreamRequest) returns(stream NextRandom) {}
+}
